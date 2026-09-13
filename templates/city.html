@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Weather</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='city.css') }}">
+</head>
+<body>
+
+    <h1 class="intro">ENTER CITY NAME</h1>
+
+    <!-- Circle container -->
+    <div class="gif-circle">
+       <img src="https://www.gifcen.com/wp-content/uploads/2023/09/pikachu-gif-3.gif" alt="Weather GIF">
+    </div>
+
+    <div class="search-box">
+        <form action="/get_weather" method="POST">
+            <input type="text" name="city_name" class="city-wid" placeholder="Enter City Name..." required>
+            <br><br>
+            <button class="search-btn" type="submit">Search</button>
+        </form>
+    </div>
+
+</body>
+</html>

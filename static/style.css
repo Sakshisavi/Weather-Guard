@@ -1,0 +1,45 @@
+body {
+  background: url("https://i.kym-cdn.com/photos/images/original/001/191/879/b54.gif") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.intro {
+  margin-top: 30px;
+  font-size: 50px;
+  color: white;
+  text-shadow: black;
+}
+
+
+
+.menu-card h2 {
+    margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: aliceblue;
+  ;
+}
+
+.buttons button {
+    justify-content: center;
+  align-items: center;
+  display: block;              /* Each button on its own line */
+  width: 30%;                  /* Bigger button width */
+  margin: 10px auto;
+  padding: 18px;
+  border: none;
+  background-color:0px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 35px;         /* Rounded edges */
+  border-color: blue;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background-color:skyblue;
+}
+

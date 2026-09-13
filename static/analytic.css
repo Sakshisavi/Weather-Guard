@@ -1,0 +1,58 @@
+   .weather-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* pushes hot left, cold right */
+    padding: 0 50px;
+    gap: 20px; /* spacing between boxes */
+    box-sizing: border-box;
+}
+
+.stat-box {
+    flex: 1; /* makes both take equal width */
+    box-sizing: 500px;
+    box-shadow: #4fc3f7;
+    height: 80;
+    color: 0px;
+    align-items: left;
+    text-align: center;
+    font-weight: bold;
+}
+.stat-box h3 { margin-top: 5px; font-size: 30px; }
+.stat-box p { margin: 0; font-size: 40px; font-weight: bold; color: aliceblue; }
+.hot{
+    background:rgba(232, 101, 7, 0.693) ;
+}
+.cold{
+    background:rgba(14, 217, 240, 0.693) ;
+}
+body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: column;
+            justify-content: flex-end; /* push content to the bottom */
+            align-items: center;      /* keep them centered horizontally */
+            background: url('https://giffiles.alphacoders.com/152/15265.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .analytics-card {
+            background: rgba(5, 117, 146, 0.75);
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+       
+        .cold { color: #81d4fa; }
+        .hot { color: red; }
+       a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #4fc3f7;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Analytics</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='analytic.css') }}">
+</head>
+<body>
+
+<div class ="weather-container">
+    <div class="stat-box">
+        <h3 class="hot">🔥 Hottest City Queried</h3>
+        {% if hottest %}
+            <p>{{ hottest.city }}: {{ hottest.temp }} °C</p>
+        {% else %}
+            <p>No queries recorded yet</p>
+        {% endif %}
+    </div>
+
+
+    <div class="stat-box">
+        <h3 class="cold">❄️ Coldest City Queried</h3>
+        {% if coldest %}
+            <p>{{ coldest.city }}: {{ coldest.temp }} °C</p>
+        {% else %}
+            <p>No queries recorded yet</p>
+        {% endif %}
+    </div>
+
+    <br><br><br>
+   
+</div>' <a href="/">← Back to Home</a>'
+
+
+</div>
+</body>
+</html>

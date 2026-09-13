@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Flask dynamically injects the weather-matched background GIF here */
+            background: url('{{ bg_gif }}') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .weather-card {
+            background: rgba(5, 117, 146, 0.75);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        .weather-card h2 {
+            margin-top: 0;
+            color: cyan;
+            text-align: center;
+            border-bottom: 2px solid cyan;
+            padding-bottom: 10px;
+        }
+        .nav-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .nav-links a {
+            color: #4fc3f7;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="weather-card">
+    <h2>City: {{ weather.city }}</h2>
+    <p><strong>Country:</strong> {{ weather.country }}</p>
+    <p><strong>Temperature:</strong> {{ weather.temp }} °C</p>
+    <p><strong>Humidity:</strong> {{ weather.humidity }} %</p>
+    <p><strong>Wind Speed:</strong> {{ weather.wind_speed }} m/s</p>
+    <p><strong>Description:</strong> {{ weather.description.capitalize() }}</p>
+    
+    <div class="nav-links">
+        <a href="/city">Search Again</a> | 
+        <a href="/">Home</a>
+    </div>
+</div>
+
+</body>
+</html>
