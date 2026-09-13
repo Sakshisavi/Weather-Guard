@@ -18,8 +18,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest pytest-cov
-          working-directory: weather-Guard
+          working-directory: weather_engine
 
       - name: Run Pytest
         run: pytest
-        working-directory: weather-Guard
+        working-directory: weather-engine
