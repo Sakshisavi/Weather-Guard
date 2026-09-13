@@ -5,6 +5,9 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: weather_engine
     steps:
       - uses: actions/checkout@v4
 
@@ -18,8 +21,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest pytest-cov
-          working-directory: weather_engine
 
       - name: Run Pytest
         run: pytest
-        working-directory: weather-engine
