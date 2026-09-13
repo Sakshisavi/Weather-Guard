@@ -15,7 +15,7 @@ WEATHER_GIFS = {
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('Index.html')
 
 @app.route('/city')
 def city():
