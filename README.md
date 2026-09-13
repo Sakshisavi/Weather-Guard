@@ -57,7 +57,6 @@ pip install -r requirements.txt
   pytest test_weather.py
   
 **📊 System Architecture**
-**Plaintext
 [ User Interface (Flask / CLI) ]
                │
                ▼
@@ -69,7 +68,7 @@ pip install -r requirements.txt
     [ OpenWeatherMap API ]
                │
                ├──► Store Result in WeatherCache (LRU Eviction)
-               └──► Update AnalyticsEngine (Min/Max Heaps)**
+               └──► Update AnalyticsEngine (Min/Max Heaps)
 
 
 **1st Page You'll See** 
