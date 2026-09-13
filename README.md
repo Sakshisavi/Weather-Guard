@@ -51,24 +51,32 @@ pip install -r requirements.txt
 
  Bash
  python main.py
+ 
 5. **Run Unit Tests**:
 
   Bash
   pytest test_weather.py
   
 **📊 System Architecture**
-[ User Interface (Flask / CLI) ]
-               │
-               ▼
-      [ WeatherCache ]  ──(Cache Hit)──► Return Stored Weather Data
-               │
-          (Cache Miss)
-               │
-               ▼
-    [ OpenWeatherMap API ]
-               │
-               ├──► Store Result in WeatherCache (LRU Eviction)
-               └──► Update AnalyticsEngine (Min/Max Heaps)
++------------------------------------+
+|     User Interface (Flask / CLI)   |
++------------------------------------+
+                  |
+                  v
+          +---------------+
+          | WeatherCache  |---(Cache Hit)----> Return Stored Weather Data
+          +---------------+
+                  |
+             (Cache Miss)
+                  |
+                  v
+       +--------------------+
+       | OpenWeatherMap API |
+       +--------------------+
+                  |
+                  +---> Store Result in WeatherCache (LRU Eviction)
+                  |
+                  +---> Update AnalyticsEngine (Min/Max Heaps)
 
 
 **1st Page You'll See** 
