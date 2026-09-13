@@ -65,7 +65,7 @@ pip install -r requirements.txt
     API --> Eviction[Store Result in WeatherCache / LRU Eviction]
     API --> Analytics[Update AnalyticsEngine / Min-Max Heaps]
 
-**SCREENSHOTS**
+**SCREENSHOTS**:
 **1st Page You'll See** 
 <img width="1912" height="955" alt="1st" src="https://github.com/user-attachments/assets/286daef5-4f85-4f33-8aef-3f5b9a650a1f" />
 
