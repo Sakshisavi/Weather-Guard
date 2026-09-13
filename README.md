@@ -57,7 +57,7 @@ pip install -r requirements.txt
   pytest test_weather.py
   
 **📊 System Architecture**
-Plaintext
+**Plaintext
 [ User Interface (Flask / CLI) ]
                │
                ▼
@@ -69,13 +69,18 @@ Plaintext
     [ OpenWeatherMap API ]
                │
                ├──► Store Result in WeatherCache (LRU Eviction)
-               └──► Update AnalyticsEngine (Min/Max Heaps)
+               └──► Update AnalyticsEngine (Min/Max Heaps)**
 
 
-   
+**1st Page You'll See** 
 <img width="1911" height="965" alt="ur_weather" src="https://github.com/user-attachments/assets/a8ec30af-1875-4a2b-8981-4fe2e0067ede" />
+
+**2nd Enter Your City**
 <img width="1911" height="960" alt="city" src="https://github.com/user-attachments/assets/bcbe0276-ee14-4e2a-a9a7-37170fa1ed0c" />
+**3rd Your Weather Report According To City**
 <img width="1912" height="955" alt="1st" src="https://github.com/user-attachments/assets/286daef5-4f85-4f33-8aef-3f5b9a650a1f" />
-<img width="1907" height="961" alt="anal" src="https://github.com/user-attachments/assets/37b8ef87-028f-48f5-ac36-fe2669163488" />
+**Your Weather Report of Different city(example)**
 <img width="1898" height="963" alt="ur_weather2" src="https://github.com/user-attachments/assets/2da2a7f8-d34d-439d-8174-e7796910ed1b" />
+**5th Analytics Page : It will show Analytics according to your Query**
+<img width="1907" height="961" alt="anal" src="https://github.com/user-attachments/assets/37b8ef87-028f-48f5-ac36-fe2669163488" />
 
